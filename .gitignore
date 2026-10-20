@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+
+.pages-build/
+out/
+.DS_Store
+
+# Separate project, not part of Do Clubs
+DoSport/
