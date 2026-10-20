@@ -1,5 +1,7 @@
 # GitHub Pages deployment
 
+**Historical setup, retired in favour of GitHub → Vercel.** See [current deployment](deployment.md). The static export script remains an optional fallback; the Pages workflow is disabled. The records below document the previous configuration, not the active DNS target.
+
 The published site uses GitHub Pages, with source in `docodeclub/Doclubs` and custom domain `www.doclubs.co.uk`. The apex `doclubs.co.uk` points to GitHub Pages too and redirects to www.
 
 `pnpm build:pages` builds in an isolated ignored `.pages-build` folder and writes static files to `out`. It preserves the server API in the original source, but omits that endpoint from the Pages export. Images are served locally without the Next.js image server. Contact query preselection runs in the browser. GitHub Actions tests, builds and deploys on a push to `main` or manual workflow dispatch.

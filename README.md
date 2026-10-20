@@ -1,8 +1,8 @@
 # Do Clubs
 
-Deployment: GitHub Pages, custom domain `www.doclubs.co.uk`. See [GitHub Pages setup](docs/github-pages.md). The server-host instructions below remain available for future enquiry integration.
+Deployment: GitHub → Vercel (`docode/doclubs`), custom domain `www.doclubs.co.uk`. Pushes to `main` automatically deploy to production. See [deployment instructions](docs/deployment.md).
 
-A complete Next.js website for the Do Clubs umbrella brand, based on a live visual audit of Docode. This project is separate from Docode and does not modify any production website or DNS.
+A complete Next.js website for the Do Clubs umbrella brand, based on a live visual audit of Docode. This project is separate from Docode.
 
 ## Run locally
 

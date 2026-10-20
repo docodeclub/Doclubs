@@ -2,9 +2,11 @@
 
 ## Hosting
 
-Use a Node-compatible Next.js host (for example Vercel) or a Node server behind an HTTPS reverse proxy. This project is not a static export: enquiries require the server route. Runtime: Node 22+. Install with `pnpm install --frozen-lockfile`; build with `pnpm build`. Start with `pnpm start` (loopback port 3000). A container platform may require `pnpm exec next start --hostname 0.0.0.0`; bind publicly only in the hosting environment. Keep preview deployments private or configure host-level noindex until approved for public launch.
+Production uses Vercel project `docode/doclubs`, connected to `docodeclub/Doclubs` on GitHub. Pushes to `main` deploy production; Vercel manages previews and HTTPS. Use the Next.js preset, repository root, and normal `pnpm build` command. Do not set `GITHUB_PAGES` on Vercel: production includes the enquiry server route and Next.js image optimisation. Enquiry delivery remains disabled until the settings below are supplied.
 
-The canonical address is already `https://www.doclubs.co.uk`. After the owner authorises DNS work, add this domain to the chosen host, apply only its specified verification/DNS records and confirm TLS. Configure the apex `doclubs.co.uk` to redirect to `www.doclubs.co.uk` at the host. No DNS or hosting change has been made during this build. Do not alter Docode, DoSport or DoChess domains.
+Runtime: Node 22+. Install with `pnpm install --frozen-lockfile`; build with `pnpm build`. For a local production check use `pnpm start` (loopback port 3000). Keep preview deployments private or configure host-level noindex until approved for public launch.
+
+The canonical address is `https://www.doclubs.co.uk`. Squarespace remains the registrar/DNS provider. Both domain variants belong to the Vercel project, with the apex redirecting to www. Use the DNS values shown by Vercel, preserving unrelated email-security and Domain Connect records. GitHub Pages deployment is retired. Do not alter Docode, DoSport or DoChess domains.
 
 ## Required before enabling enquiries
 
