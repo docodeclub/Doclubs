@@ -8,6 +8,8 @@ Runtime: Node 22+. Install with `pnpm install --frozen-lockfile`; build with `pn
 
 The canonical address is `https://www.doclubs.co.uk`. Squarespace remains the registrar/DNS provider. Both domain variants belong to the Vercel project, with the apex redirecting to www. Use the DNS values shown by Vercel, preserving unrelated email-security and Domain Connect records. GitHub Pages deployment is retired. Do not alter Docode, DoSport or DoChess domains.
 
+Squarespace records configured on 20 October 2026: `@` A `216.150.1.1`; `www` CNAME `ff4e37f8cc00b46b.vercel-dns-016.com`, both with four-hour TTL. Vercel redirects the apex to www using HTTP 308. The previous GitHub Pages endpoint is retained temporarily for cached DNS; its workflow is disabled and no longer runs on pushes.
+
 ## Required before enabling enquiries
 
 Copy `.env.example` to `.env.local` for development, or use the hosting provider's secret settings. Never commit secrets.
