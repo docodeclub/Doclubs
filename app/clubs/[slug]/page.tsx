@@ -26,7 +26,7 @@ export default async function Programme({
   return (
     <>
       <Intro
-        eyebrow={live ? "Available now" : "Something new is on its way"}
+        eyebrow={live ? "Explore the programme" : "Something new is on its way"}
         title={`${b.name}. ${b.tagline}`}
       >
         <p>{b.description}</p>
@@ -35,7 +35,7 @@ export default async function Programme({
         <BrandArt id={b.id} />
         <div>
           <span className={`status ${b.launchStatus}`}>
-            {live ? "Available now" : "Preparing to launch"}
+            {live ? "Explore the programme" : "Preparing to launch"}
           </span>
           <h2>
             {live

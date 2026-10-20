@@ -40,8 +40,8 @@ export default function About() {
           </p>
           <p>
             Docode keeps its own identity and its focus on coding, technology
-            and digital skills. DoSport and DoChess are new specialist brands
-            preparing to launch.
+            and digital skills. DoSport brings a focus on movement and active play,
+            while DoChess opens up a world of strategy and problem-solving.
           </p>
           <p>
             As the family grows, our aim is simple: make it easier for schools
@@ -73,9 +73,9 @@ export default function About() {
           </p>
           <h3>Quality before expansion</h3>
           <p>
-            New programmes will launch when their delivery arrangements are
-            ready. We will be clear about what is available today and what is
-            still to come.
+            Each specialist website explains its programmes and current
+            availability, so schools and families can find the details
+            that matter to them.
           </p>
         </div>
       </section>

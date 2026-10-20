@@ -63,7 +63,7 @@ export default function Privacy() {
         </p>
         <h2>Specialist websites and bookings</h2>
         <p>
-          Links to Docode and, when launched, other specialist providers take
+          Links to Docode, DoSport and DoChess take
           you to separate websites. Their own privacy information applies. Do
           Clubs does not take payments or collect children’s booking details
           here.

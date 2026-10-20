@@ -58,12 +58,14 @@ export default function EnquiryForm({
           <strong>Online enquiries are not open yet.</strong>
           <p>
             You can explore the form, but it will not send or store your
-            details. For existing Docode clubs and bookings,{" "}
-            <a href="https://www.docode.co.uk/contact">
-              contact Docode directly ↗
-            </a>
-            .
+            details. For programme enquiries and existing bookings, visit your
+            specialist provider below.
           </p>
+          {brands.filter((brand) => brand.launchStatus === "live").map((brand) => (
+            <p key={brand.id}>
+              <a href={brand.externalWebsiteUrl}>Visit {brand.name} ↗</a>
+            </p>
+          ))}
         </div>
       )}
       {school ? (

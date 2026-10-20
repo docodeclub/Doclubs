@@ -2,9 +2,10 @@ import { Intro, Button, Closing } from "@/components/ui";
 import EnquiryForm from "@/components/enquiry-form";
 import { enquiriesEnabled } from "@/config/site";
 import { pageMetadata } from "@/lib/metadata";
+import { brands } from "@/config/brands";
 export const metadata = pageMetadata(
   "For Schools",
-  "Explore school partnerships for primary and independent prep-school enrichment in London and Surrey, with Docode available and new programmes planned.",
+  "Explore school partnerships for primary and independent prep-school enrichment in London and Surrey, with Docode, DoSport and DoChess.",
   "/schools",
 );
 export default function Schools() {
@@ -36,13 +37,17 @@ export default function Schools() {
             and coordinate.
           </p>
           <p>
-            DoSport and DoChess are being developed. We welcome early
-            conversations about these programmes, but cannot offer start dates
-            or bookings until they are ready.
+            Explore DoSport for sports enrichment and DoChess for chess. Each
+            specialist website is the place to discuss year groups, locations,
+            timings and current availability.
           </p>
-          <Button href="https://www.docode.co.uk/schools" secondary>
-            Explore Docode for schools
-          </Button>
+          <div className="actions">
+            {brands.map((brand) => (
+              <Button key={brand.id} href={brand.externalWebsiteUrl} secondary>
+                Explore {brand.name}
+              </Button>
+            ))}
+          </div>
         </div>
       </section>
       <section className="section tinted">
@@ -109,8 +114,7 @@ export default function Schools() {
           <p>
             Ask for programme-specific safeguarding information and relevant
             staff assurance. Handover, collection, additional needs and your
-            school’s requirements should be agreed before delivery. New brands
-            will need these arrangements in place before they launch.
+            school’s requirements should be agreed with the provider before delivery.
           </p>
         </div>
       </section>
@@ -127,11 +131,8 @@ export default function Schools() {
             Surrey and surrounding areas are our initial focus.
           </p>
           <p>
-            For an existing Docode school club,{" "}
-            <a className="inline-link" href="https://www.docode.co.uk/contact">
-              contact Docode directly ↗
-            </a>
-            .
+            For an existing school club, contact the specialist provider on
+            your booking or school partnership confirmation.
           </p>
         </div>
         <EnquiryForm school enabled={enquiriesEnabled()} />

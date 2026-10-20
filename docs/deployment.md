@@ -40,6 +40,6 @@ Respond 2xx only after durable receipt/delivery acceptance. The UI says "receive
 2. Run production server and check all pages, images, sitemap, robots and social image.
 3. Confirm public contact details, legal entity, privacy text and hosting log/retention practices.
 4. Configure delivery and edge rate protection; send a controlled test to your own inbox and confirm receipt and failure handling.
-5. Verify brand launch states. Only Docode is live in the delivered configuration.
+5. Verify brand launch states. Docode, DoSport and DoChess are configured as live brands following the owner’s update. Booking availability is determined by each provider.
 6. Connect domain only after explicit owner authorisation. Verify HTTPS and canonical redirect.
 7. If analytics, embeds or optional cookies are added later, reassess privacy and consent before enabling them.

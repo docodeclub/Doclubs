@@ -1,3 +1,5 @@
+> Historical build report. All three brands were subsequently activated on 20 October 2026, and production hosting moved to Vercel. See deployment.md for current hosting details.
+
 # Do Clubs completion report
 
 Completed 20 October 2026 in `/Users/lukecurrie/Documents/DoClubs`.

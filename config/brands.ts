@@ -43,35 +43,35 @@ export const brands: Brand[] = [
     name: "DoSport",
     tagline: "Get moving.",
     description:
-      "A new way to play, build confidence and enjoy being active. Specialist sports enrichment is on its way.",
+      "School sports enrichment that helps children build confidence, develop movement skills and enjoy being active.",
     domain: "https://www.dosport.co.uk",
     accentColour: "#df6a35",
     logoAsset: null,
-    launchStatus: "coming-soon",
+    launchStatus: "live",
     bookingUrl: null,
     externalWebsiteUrl: "https://www.dosport.co.uk",
     activities: [
-      "Multi-sports",
-      "Football",
-      "Athletics",
-      "Team games",
-      "Movement & active play",
+      "Multisport",
+      "Ball skills",
+      "Throwing & catching",
+      "Target games",
+      "Movement challenges",
     ],
     benefit:
-      "Planned sessions will encourage teamwork, coordination and the confidence to try something new.",
+      "DoSport is developing welcoming multisport sessions with schools, encouraging coordination, teamwork and the confidence to have a go.",
     audience:
-      "Being developed for primary and prep-school communities. Ages and delivery details will be confirmed at launch.",
+      "Reception–Year 2 focus. Visit DoSport for school partnership enquiries and current programme details.",
   },
   {
     id: "dochess",
     name: "DoChess",
     tagline: "Think ahead.",
     description:
-      "Small moves. Big possibilities. A new chess programme to spark curiosity and strategic thinking.",
+      "Small moves. Big possibilities. Explore chess, problem-solving and strategic thinking with DoChess.",
     domain: "https://www.dochess.co.uk",
     accentColour: "#6556ad",
     logoAsset: null,
-    launchStatus: "coming-soon",
+    launchStatus: "live",
     bookingUrl: null,
     externalWebsiteUrl: "https://www.dochess.co.uk",
     activities: [
@@ -82,9 +82,9 @@ export const brands: Brand[] = [
       "Friendly competitions",
     ],
     benefit:
-      "Planned activities will give children space to practise concentration, consider different possibilities and learn from each move.",
+      "Chess gives children space to practise concentration, consider different possibilities and learn from each move.",
     audience:
-      "Being developed for primary and prep-school communities. Ages and delivery details will be confirmed at launch.",
+      "Check the specialist website for year groups, locations and current programme availability.",
   },
 ];
 export function brandHref(b: Brand) {

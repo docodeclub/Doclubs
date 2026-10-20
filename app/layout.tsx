@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Do Clubs",
   },
   description:
-    "Discover a growing family of specialist extracurricular clubs for primary and prep schools. Coding today, with sport and chess on the way.",
+    "Discover a growing family of specialist extracurricular clubs for primary and prep schools. Explore coding, sport and chess with Docode, DoSport and DoChess.",
   openGraph: {
     siteName: "Do Clubs",
     locale: "en_GB",

@@ -109,7 +109,7 @@ export default function Home() {
                   {brand.name}
                   <small>
                     {brand.launchStatus === "live"
-                      ? "AVAILABLE NOW"
+                      ? "EXPLORE THE PROGRAMME"
                       : "COMING SOON"}
                   </small>
                 </strong>

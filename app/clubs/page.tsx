@@ -3,7 +3,7 @@ import { BrandArt, BrandName, Button, Intro, Closing } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
   "Our Clubs",
-  "Explore Docode coding clubs and discover planned DoSport and DoChess programmes for school enrichment.",
+  "Explore coding, sport and chess with Docode, DoSport and DoChess. Visit each specialist website for programme details and availability.",
   "/clubs",
 );
 export default function Clubs() {
@@ -22,7 +22,7 @@ export default function Clubs() {
             <div>
               <span className={`status ${b.launchStatus}`}>
                 {b.launchStatus === "live"
-                  ? "Established · Available now"
+                  ? "Explore the programme"
                   : "Preparing to launch"}
               </span>
               <div className="programme-logo">

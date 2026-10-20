@@ -3,11 +3,10 @@ import { brands } from "@/config/brands";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
   "For Parents",
-  "Find your child’s next interest. Explore specialist clubs and book available Docode sessions directly with Docode.",
+  "Find your child’s next interest with Docode, DoSport and DoChess. Visit each specialist website for ages, locations and availability.",
   "/parents",
 );
 export default function Parents() {
-  const docode = brands.find((b) => b.id === "docode")!;
   return (
     <>
       <Intro
@@ -67,16 +66,20 @@ export default function Parents() {
       </section>
       <section className="shell booking-panel">
         <div>
-          <span className="status live">Available now</span>
-          <h2>Ready to get creative?</h2>
+          <span className="status live">Your next step</span>
+          <h2>Found their interest?</h2>
           <p>
-            Docode offers coding clubs and holiday Code Camps for ages 5–13.
-            Choose your school or camp on Docode’s booking website to see
-            session availability and the right year groups.
+            Explore coding with Docode, movement with DoSport or strategy with
+            DoChess. Visit the specialist website to find programme details,
+            ask a question or book an available session.
           </p>
-          {docode.launchStatus === "live" && docode.bookingUrl && (
-            <Button href={docode.bookingUrl}>Find a lesson with Docode</Button>
-          )}
+          <div className="actions">
+            {brands.map((brand) => (
+              <Button key={brand.id} href={brand.bookingUrl || brand.externalWebsiteUrl}>
+                {brand.bookingUrl ? `Book with ${brand.name}` : `Explore ${brand.name}`}
+              </Button>
+            ))}
+          </div>
         </div>
         <div>
           <h3>Already booked?</h3>
@@ -84,9 +87,7 @@ export default function Parents() {
             For changes, collection arrangements or a question about your
             child’s session, contact the provider on your booking confirmation.
           </p>
-          <Button href="https://www.docode.co.uk/contact" secondary>
-            Contact Docode
-          </Button>
+          <Button href="/contact" secondary>Find your provider</Button>
         </div>
       </section>
       <section className="shell faq section">
@@ -94,12 +95,12 @@ export default function Parents() {
         <h2>A few practical questions.</h2>
         {[
           [
-            "Can I book DoSport or DoChess yet?",
-            "Not yet. Both are preparing to launch. Their Do Clubs pages will explain availability and link to their booking arrangements once they are ready.",
+            "Where can I find DoSport and DoChess?",
+            "Visit their specialist websites using the links above. Each provider explains its programmes, school partnerships and current availability. Session options depend on your school, location and dates.",
           ],
           [
             "Which ages are the clubs for?",
-            "Docode offers programmes for children aged 5–13, with year groups specified for individual sessions. Age ranges for DoSport and DoChess will be confirmed at launch.",
+            "Docode offers programmes for children aged 5–13, with year groups specified for individual sessions. DoSport focuses on Reception–Year 2. Check DoChess’s website for its current age groups, and confirm suitability with the provider before booking.",
           ],
           [
             "What if my child needs additional support?",

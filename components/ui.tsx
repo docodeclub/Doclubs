@@ -116,7 +116,7 @@ export function BrandCards() {
             <div className="brand-top">
               <BrandName brand={b} />
               <span className={`status ${b.launchStatus}`}>
-                {b.launchStatus === "live" ? "Available now" : "Coming soon"}
+                {b.launchStatus === "live" ? "Explore the programme" : "Coming soon"}
               </span>
             </div>
             <h3>{b.tagline}</h3>

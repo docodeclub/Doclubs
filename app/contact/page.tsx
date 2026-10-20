@@ -4,10 +4,11 @@ import ContactForm from "@/components/contact-form";
 import { Intro } from "@/components/ui";
 import EnquiryForm from "@/components/enquiry-form";
 import { enquiriesEnabled, site } from "@/config/site";
+import { brands } from "@/config/brands";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
   "Contact",
-  "Talk to Do Clubs about school partnerships, upcoming programmes or finding the right specialist club for your child.",
+  "Talk to Do Clubs about school partnerships, specialist programmes or finding the right specialist club for your child.",
   "/contact",
 );
 export default function Contact() {
@@ -18,7 +19,7 @@ export default function Contact() {
         title="Good things start with a conversation."
       >
         <p>
-          Explore a school partnership, ask about what’s coming or find the
+          Explore a school partnership, discover our programmes or find the
           right place for your question.
         </p>
       </Intro>
@@ -48,7 +49,7 @@ export default function Contact() {
         <article>
           <span>03 / GENERAL</span>
           <h2>Something else in mind?</h2>
-          <p>Ask about Do Clubs or a programme that’s preparing to launch.</p>
+          <p>Ask about Do Clubs or find the right specialist programme.</p>
           <Link className="text-link" href="#enquiry">
             General enquiry →
           </Link>
@@ -76,14 +77,18 @@ export default function Contact() {
             </p>
           )}
           <div className="contact-note">
-            <h3>Looking for Docode?</h3>
+            <h3>Contact your specialist provider</h3>
             <p>
-              For a current coding club, camp or booking, you can go straight to
-              the established Docode team.
+              For programme details or an existing booking, visit the relevant
+              brand website to reach its team.
             </p>
-            <a className="text-link" href="https://www.docode.co.uk/contact">
-              Contact Docode ↗
-            </a>
+            {brands.map((brand) => (
+              <p key={brand.id}>
+                <a className="text-link" href={brand.externalWebsiteUrl}>
+                  Visit {brand.name} ↗
+                </a>
+              </p>
+            ))}
           </div>
         </div>
         <Suspense fallback={<EnquiryForm enabled={false} />}><ContactForm enabled={enquiriesEnabled()} /></Suspense>

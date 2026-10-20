@@ -43,10 +43,9 @@ test("general enquiries do not need a school", () => {
     true,
   );
 });
-test("upcoming brands never lead off-site, while launch configuration activates links", () => {
-  for (const b of brands.filter((b) => b.launchStatus === "coming-soon")) {
-    assert.equal(brandHref(b), `/clubs/${b.id}`);
-    assert.equal(b.bookingUrl, null);
+test("brand links follow launch status", () => {
+  for (const b of brands) {
+    assert.equal(brandHref({ ...b, launchStatus: "coming-soon" }), `/clubs/${b.id}`);
     assert.equal(
       brandHref({ ...b, launchStatus: "live" }),
       b.externalWebsiteUrl,
