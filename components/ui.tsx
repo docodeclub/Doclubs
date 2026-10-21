@@ -103,12 +103,8 @@ export function BrandCards() {
       {brands.map((b) => (
         <article className={`brand-card ${b.id}`} key={b.id}>
           <Link
-            href={brandHref(b)}
-            aria-label={
-              b.launchStatus === "live"
-                ? `Visit ${b.name} website`
-                : `Discover ${b.name}`
-            }
+            href={`/clubs/${b.id}`}
+            aria-label={`Explore ${b.name} clubs and camps`}
           >
             <BrandArt id={b.id} />
           </Link>
@@ -121,15 +117,9 @@ export function BrandCards() {
             </div>
             <h3>{b.tagline}</h3>
             <p>{b.description}</p>
-            <Link className="text-link" href={brandHref(b)}>
-              {b.launchStatus === "live"
-                ? `Explore ${b.name}`
-                : `Discover ${b.name}`}
-              {b.launchStatus === "live" ? (
-                <ArrowUpRight size={18} />
-              ) : (
-                <ArrowRight size={18} />
-              )}
+            <Link className="text-link" href={`/clubs/${b.id}`}>
+              Explore clubs & camps
+              <ArrowRight size={18} />
             </Link>
           </div>
         </article>

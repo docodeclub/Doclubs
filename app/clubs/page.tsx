@@ -38,7 +38,8 @@ export default function Clubs() {
               <p className="muted">{b.audience}</p>
               {b.launchStatus === "live" ? (
                 <div className="actions">
-                  <Button href={b.externalWebsiteUrl}>Visit {b.name}</Button>
+                  <Button href={`/clubs/${b.id}`}>Explore clubs & camps</Button>
+                  <Button secondary href={b.externalWebsiteUrl}>Visit {b.name}</Button>
                   {b.bookingUrl && (
                     <Button secondary href={b.bookingUrl}>
                       Find a lesson
