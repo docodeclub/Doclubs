@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import { navigation } from "@/config/site";
+import { navigation, bookingHref } from "@/config/site";
 export function Wordmark() {
   return (
     <Image className="site-logo" src="/brands/doclubs-primary.svg" width={727} height={181} alt="Do Clubs" />
@@ -58,8 +58,8 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <Link className="button small" href="/schools#enquire">
-            Partner with us <ArrowUpRight size={17} />
+          <Link className="button small" href={bookingHref()}>
+            Find a club <ArrowUpRight size={17} />
           </Link>
         </nav>
       </div>

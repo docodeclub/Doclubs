@@ -58,7 +58,7 @@ export const brands: Brand[] = [
       "Movement challenges",
     ],
     benefit:
-      "DoSport is developing welcoming multisport sessions with schools, encouraging coordination, teamwork and the confidence to have a go.",
+      "Welcoming multisport sessions encourage coordination, teamwork and the confidence to have a go.",
     audience:
       "Reception–Year 2 focus. Visit DoSport for school partnership enquiries and current programme details.",
   },

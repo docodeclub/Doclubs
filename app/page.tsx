@@ -2,13 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { Fragment } from "react";
 import { brands } from "@/config/brands";
+import { bookingHref } from "@/config/site";
 import {
   ArrowDown,
   ArrowUpRight,
-  Code2,
-  ChessKnight,
-  Volleyball,
-  Sparkles,
   Compass,
   Heart,
   Lightbulb,
@@ -24,69 +21,22 @@ export const metadata = pageMetadata(
 export default function Home() {
   return (
     <>
-      <section className="hero shell">
-        <div className="hero-copy">
-          <p className="eyebrow">
-            <span className="green-dot" /> A world beyond the classroom
-          </p>
-          <h1>
-            Extraordinary
-            <br />
-            clubs.
-            <br />
-            <span>Every interest.</span>
-          </h1>
-          <p className="hero-description">
-            From coding and chess to sports and beyond, Do Clubs brings together
-            specialist extracurricular experiences that inspire children to
-            discover what they love.
-          </p>
+      <section className="company-hero">
+        <Image className="company-hero-photo" src="/images/clubs-team.jpg" alt="Children listening to a coach on a sports field" fill sizes="100vw" preload />
+        <div className="company-hero-shade" aria-hidden="true" />
+        <div className="shell company-hero-content">
+          <p className="eyebrow"><span className="green-dot" /> Clubs, camps & school enrichment</p>
+          <h1>Extraordinary clubs.<br /><span>Every interest.</span></h1>
+          <p className="company-hero-description">Coding, sport and chess. We bring specialist activities to schools and families, helping children build skills, grow in confidence and discover what they love.</p>
           <div className="actions">
-            <Button href="/clubs">Explore our clubs</Button>
-            <Button href="/schools" secondary>
-              Partner with us
-            </Button>
+            <Button href={bookingHref()}>Find a club</Button>
+            <Button href="/schools" secondary>For schools</Button>
           </div>
-          <p className="hero-footnote">
-            <span className="tiny-flower">✳</span> Little discoveries. Lifelong
-            possibilities.
-          </p>
-        </div>
-        <div
-          className="hero-art"
-          aria-label="An illustration of coding, sport and chess coming together"
-        >
-          <div className="art-heading">
-            SO MUCH TO <strong>DISCOVER.</strong>
-            <Sparkles size={26} />
-          </div>
-          <div className="hero-tile coding">
-            <span>CREATE</span>
-            <Code2 strokeWidth={1.3} />
-            <small>Big ideas start here.</small>
-            <i aria-hidden="true">↗</i>
-          </div>
-          <div className="hero-tile sport">
-            <span>PLAY</span>
-            <Volleyball strokeWidth={1.3} />
-            <small>Find your stride.</small>
-          </div>
-          <div className="hero-tile chess">
-            <span>THINK</span>
-            <ChessKnight strokeWidth={1.3} />
-            <small>Make your next move.</small>
-          </div>
-          <div className="art-sticker" aria-hidden="true">
-            Curiosity
-            <br />
-            looks good
-            <br />
-            on you. <span>✳</span>
-          </div>
-          <div className="art-bottom">
-            <span>DISCOVER. LEARN. PLAY.</span>
-            <span>↗</span>
-          </div>
+          <nav className="hero-programmes" aria-label="Our specialist programmes">
+            <Link href="/clubs/docode">Coding with Docode <ArrowUpRight size={16} /></Link>
+            <Link href="/clubs/dosport">Sport with DoSport <ArrowUpRight size={16} /></Link>
+            <Link href="/clubs/dochess">Chess with DoChess <ArrowUpRight size={16} /></Link>
+          </nav>
         </div>
       </section>
       <div className="family-strip">
@@ -144,8 +94,8 @@ export default function Home() {
         </div>
         <BrandCards />
         <p className="section-note">
-          Docode is up and running. DoSport and DoChess are getting ready for
-          their first chapter.
+          Three specialist brands. One shared commitment to children’s learning,
+          confidence and enjoyment.
         </p>
       </section>
       <section className="why">

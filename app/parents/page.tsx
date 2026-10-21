@@ -50,8 +50,8 @@ export default function Parents() {
             Do Clubs helps you discover. Your provider handles the booking.
           </strong>
           <p>
-            There is no central checkout here. You’ll always know which provider
-            you are booking with.
+            Choose a programme, check the session details and follow the booking
+            link provided for your club or camp.
           </p>
         </div>
       </section>

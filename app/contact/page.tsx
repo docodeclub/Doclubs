@@ -57,10 +57,11 @@ export default function Contact() {
       </section>
       <section className="shell form-section" id="enquiry">
         <div>
-          <p className="eyebrow">Send an enquiry</p>
-          <h2>What’s on your mind?</h2>
+          <p className="eyebrow">Get in touch</p>
+          <h2>Let’s find the right team.</h2>
           <p>
-            Choose a route and share a little about what you’re looking for.
+            Choose your programme for school partnerships, session information
+            and help with an existing booking.
           </p>
           {site.email && (
             <p>

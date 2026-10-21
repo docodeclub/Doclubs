@@ -57,9 +57,9 @@ export default function Clubs() {
         <p className="eyebrow">Room to grow</p>
         <h2>A family with an open mind.</h2>
         <p>
-          Our ambition is to introduce more specialist interests over time. Art,
-          drama, music and languages are possibilities for the future, rather
-          than programmes available today.
+          Looking for something particular for your school? Talk to us about
+          your pupils’ interests and how specialist enrichment can support
+          your school community.
         </p>
       </section>
       <Closing />

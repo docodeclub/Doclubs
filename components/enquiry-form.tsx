@@ -18,6 +18,24 @@ export default function EnquiryForm({
     "idle",
   );
   const [message, setMessage] = useState("");
+  if (!enabled) {
+    return (
+      <div className="provider-directory">
+        <p className="eyebrow">The Do Clubs team</p>
+        <h3>{school ? "Bring a specialist club to your school." : "How can we help?"}</h3>
+        <p>Find programme information and the right contact through your specialist team.</p>
+        <div className="provider-links">
+          {brands.map((brand) => (
+            <a key={brand.id} href={`${brand.externalWebsiteUrl}/${school ? "schools" : "contact"}`}>
+              <span><strong>{brand.name}</strong><small>{brand.tagline}</small></span>
+              <ArrowRight size={20} aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+        <p className="provider-help">Already booked? Your confirmation contains the details for your session and provider.</p>
+      </div>
+    );
+  }
   return (
     <form
       aria-label={school ? "School enquiry" : "Contact enquiry"}
@@ -53,21 +71,6 @@ export default function EnquiryForm({
         }
       }}
     >
-      {!enabled && (
-        <div className="notice">
-          <strong>Online enquiries are not open yet.</strong>
-          <p>
-            You can explore the form, but it will not send or store your
-            details. For programme enquiries and existing bookings, visit your
-            specialist provider below.
-          </p>
-          {brands.filter((brand) => brand.launchStatus === "live").map((brand) => (
-            <p key={brand.id}>
-              <a href={brand.externalWebsiteUrl}>Visit {brand.name} ↗</a>
-            </p>
-          ))}
-        </div>
-      )}
       {school ? (
         <input type="hidden" name="route" value="school" />
       ) : (

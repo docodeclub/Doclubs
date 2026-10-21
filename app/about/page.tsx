@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <Intro
-        eyebrow="Our story is growing"
+        eyebrow="About Do Clubs"
         title="There’s a whole world beyond the classroom."
       >
         <p>
@@ -35,7 +35,7 @@ export default function About() {
           <p>
             Do Clubs was created to bring together specialist extracurricular
             programmes under one recognisable family of brands. Building on the
-            experience of Docode, our ambition is to help schools offer a wider
+            experience of Docode, we help schools offer a wider
             range of engaging, professionally organised activities.
           </p>
           <p>
@@ -44,7 +44,7 @@ export default function About() {
             while DoChess opens up a world of strategy and problem-solving.
           </p>
           <p>
-            As the family grows, our aim is simple: make it easier for schools
+            We make it easier for schools
             and parents to discover activities led by people who understand
             their subject, with clear expectations and thoughtful organisation.
           </p>
@@ -63,7 +63,7 @@ export default function About() {
         <div>
           <h3>Specialism with purpose</h3>
           <p>
-            Each programme should have its own expertise, character and
+            Each programme has its own expertise, character and
             approach, with children’s curiosity as the starting point.
           </p>
           <h3>Partnerships that work</h3>
@@ -71,7 +71,7 @@ export default function About() {
             Strong school relationships begin with listening, realistic planning
             and clear responsibilities.
           </p>
-          <h3>Quality before expansion</h3>
+          <h3>Care in every detail</h3>
           <p>
             Each specialist website explains its programmes and current
             availability, so schools and families can find the details

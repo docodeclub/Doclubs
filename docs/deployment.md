@@ -43,3 +43,9 @@ Respond 2xx only after durable receipt/delivery acceptance. The UI says "receive
 5. Verify brand launch states. Docode, DoSport and DoChess are configured as live brands following the owner’s update. Booking availability is determined by each provider.
 6. Connect domain only after explicit owner authorisation. Verify HTTPS and canonical redirect.
 7. If analytics, embeds or optional cookies are added later, reassess privacy and consent before enabling them.
+
+## External booking handoff
+
+Set `NEXT_PUBLIC_BOOKING_URL` to the confirmed HTTPS booking-system URL and redeploy. The header and homepage “Find a club” buttons use this destination. Without it, they lead to `/clubs` for programme discovery. The website does not accept payments itself. Programme-specific links remain in `config/brands.ts` and `config/programmes.ts`. Confirm the provider's booking and privacy information before enabling the handoff.
+
+When direct enquiries are unconfigured, the contact and schools pages show a specialist-team directory instead of a nonfunctional form. Configuring the enquiry service restores the form.

@@ -33,22 +33,22 @@ export const programmes: Record<string, {introduction: string; clubs: Offering; 
     "introduction": "For the energetic, the curious and children still finding their feet. DoSport focuses on an encouraging start to sport, with variety, movement and the confidence to join in.",
     "clubs": {
       "title": "A little more play in their day.",
-      "description": "DoSport is developing a playful multisport programme with schools, focused on Reception–Year 2. Activities and practical arrangements are agreed with each school.",
+      "description": "DoSport offers playful multisport for younger primary pupils, with a Reception–Year 2 focus. Activities and practical arrangements are agreed with each school.",
       "activities": [
         "Ball skills, throwing and catching",
         "Target games and movement challenges",
         "Introductory football",
         "Athletics-inspired activities"
       ],
-      "availability": "School partnerships and first locations are being developed. Visit DoSport for current club information and parent-interest updates.",
+      "availability": "Visit DoSport for school locations, year groups and the latest session information.",
       "href": "https://www.dosport.co.uk/clubs",
       "action": "Explore DoSport clubs"
     },
     "camps": {
       "title": "Looking for holiday sport?",
-      "description": "This is where we’ll share DoSport holiday camp information when a programme is announced. Explore DoSport’s approach to active play on its specialist website.",
+      "description": "Keep the school holidays active. Explore DoSport for holiday activity information and opportunities to play, learn and try something new.",
       "activities": [],
-      "availability": "No DoSport holiday camp dates or booking places are currently published. Check the specialist website for updates.",
+      "availability": "Visit DoSport for holiday programme updates. Dates, locations and age groups are listed alongside each available session.",
       "href": "https://www.dosport.co.uk",
       "action": "Check DoSport updates"
     }
@@ -64,15 +64,15 @@ export const programmes: Record<string, {introduction: string; clubs: Offering; 
         "Think a move ahead",
         "Play a friendly game and reflect"
       ],
-      "availability": "Check DoChess for current school-club information. Its clubs page does not yet list confirmed sessions or booking places.",
+      "availability": "Visit DoChess for school-club information, year groups and current session availability.",
       "href": "https://www.dochess.co.uk/clubs",
       "action": "Explore DoChess clubs"
     },
     "camps": {
       "title": "More time at the chessboard?",
-      "description": "This is where we’ll share DoChess holiday camp information when a programme is announced. In the meantime, explore the brand’s approach to learning and playing chess.",
+      "description": "Explore chess beyond the school day. Visit DoChess for holiday activity information and opportunities to spend more time learning and playing the game.",
       "activities": [],
-      "availability": "No DoChess holiday camp dates or booking places are currently published. Check the specialist website for updates.",
+      "availability": "Visit DoChess for holiday programme updates. Check each session for its dates, location and year groups.",
       "href": "https://www.dochess.co.uk",
       "action": "Check DoChess updates"
     }

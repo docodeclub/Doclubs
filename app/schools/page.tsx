@@ -23,7 +23,7 @@ export default function Schools() {
       </Intro>
       <section className="shell split-section">
         <div>
-          <p className="eyebrow">Start with what’s possible today</p>
+          <p className="eyebrow">Specialist enrichment for your school</p>
           <h2>
             Specialist interests.
             <br />A shared plan.
@@ -31,10 +31,9 @@ export default function Schools() {
         </div>
         <div>
           <p>
-            Docode already delivers coding clubs and creative technology
-            sessions for schools. Do Clubs builds on that experience, with an
-            ambition to make several specialist disciplines easier to discover
-            and coordinate.
+            Do Clubs brings coding, sport and chess together through three
+            specialist brands. We work with schools to build an enrichment
+            programme that fits their pupils and their school day.
           </p>
           <p>
             Explore DoSport for sports enrichment and DoChess for chess. Each
@@ -59,8 +58,8 @@ export default function Schools() {
             We’ll discuss the details.
           </h2>
           <p className="measure">
-            These are possible partnership models, subject to programme
-            readiness, location, staffing and an agreed proposal.
+            Choose a partnership model that fits your school. We’ll agree the
+            programme, timetable and practical arrangements with you.
           </p>
           <div className="model-grid">
             {[
@@ -127,8 +126,8 @@ export default function Schools() {
             your pupils to discover?
           </h2>
           <p>
-            Share your school, interests and preferred arrangement. London,
-            Surrey and surrounding areas are our initial focus.
+            Speak to our specialist teams about your school, your pupils’
+            interests and the arrangement that works for you.
           </p>
           <p>
             For an existing school club, contact the specialist provider on

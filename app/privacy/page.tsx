@@ -22,9 +22,10 @@ export default function Privacy() {
           </p>
         ) : (
           <p>
-            Do Clubs is a new umbrella brand. Its legal operator and privacy
-            contact are being confirmed before online enquiries open. This
-            website does not currently accept enquiry submissions.
+            This Do Clubs website provides programme information and links to
+            our specialist providers. It does not currently collect enquiry
+            submissions or payments. For an enquiry or booking made through a
+            specialist website, please refer to that provider’s privacy information.
           </p>
         )}
         <h2>Enquiries</h2>
@@ -47,15 +48,13 @@ export default function Privacy() {
           </>
         ) : (
           <p>
-            Online enquiries are disabled. Details entered into the form are not
-            submitted or saved by this website. Once the enquiry service opens,
-            this notice will explain the operator, processing arrangements and
-            retention period.
+            Enquiry links take you to the relevant specialist website. Do Clubs
+            does not collect or store enquiry details through this website.
           </p>
         )}
         <h2>Technical information and cookies</h2>
         <p>
-          This implementation does not use advertising, analytics, tracking
+          This website does not use advertising, analytics, tracking
           cookies or local storage. The hosting provider may process technical
           request information such as IP addresses and browser details to serve
           and protect the website. No optional cookie consent banner is used
