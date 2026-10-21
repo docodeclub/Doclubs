@@ -86,7 +86,7 @@ export function BrandArt({ id }: { id: string }) {
 export function BrandName({ brand }: { brand: Brand }) {
   return brand.logoAsset ? (
     <Image
-      className="docode-logo"
+      className="brand-logo"
       src={brand.logoAsset}
       width={150}
       style={{ height: "auto" }}

@@ -1,8 +1,11 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 export const alt = "Do Clubs — Extraordinary clubs. Every interest.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export default function Image() {
+export default async function Image() {
+  const logo = await readFile(join(process.cwd(), "public/brands/doclubs-primary.svg"));
   return new ImageResponse(
     <div
       style={{
@@ -16,7 +19,9 @@ export default function Image() {
         padding: 70,
       }}
     >
-      <div style={{ fontSize: 40, fontWeight: 800 }}>DO CLUBS</div>
+      <div style={{ display: "flex", background: "#fff", padding: 16, borderRadius: 12, alignSelf: "flex-start" }}>
+        <img src={`data:image/svg+xml;base64,${logo.toString("base64")}`} width={280} height={70} alt="Do Clubs" />
+      </div>
       <div
         style={{
           display: "flex",

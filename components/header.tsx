@@ -1,15 +1,13 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { navigation } from "@/config/site";
 export function Wordmark() {
   return (
-    <span className="wordmark">
-      DO<span>CLUBS</span>
-      <i aria-hidden="true">✳</i>
-    </span>
+    <Image className="site-logo" src="/brands/doclubs-primary.svg" width={727} height={181} alt="Do Clubs" />
   );
 }
 export default function Header() {

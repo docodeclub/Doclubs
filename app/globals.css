@@ -581,7 +581,7 @@ ul {
   min-height: 42px;
   margin-bottom: 22px;
 }
-.docode-logo {
+.brand-logo {
   width: 125px;
   height: auto;
   object-fit: contain;
@@ -837,7 +837,7 @@ footer {
 .programme-logo {
   margin-top: 10px;
 }
-.programme-logo .docode-logo {
+.programme-logo .brand-logo {
   width: 170px;
 }
 .programme-logo .brand-wordmark {
@@ -1935,3 +1935,7 @@ details p {
   background: color-mix(in srgb, var(--brand-accent) 14%, #f8f7f3) !important;
   color: color-mix(in srgb, var(--brand-accent) 48%, #201b49) !important;
 }
+
+/* Supplied primary brand artwork, kept at its natural aspect ratio. */
+.site-logo { display: block; width: 190px; height: auto; }
+@media (max-width: 650px) { .site-logo { width: 155px; } }

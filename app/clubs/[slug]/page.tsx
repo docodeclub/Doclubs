@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { brands } from "@/config/brands";
 import { programmes } from "@/config/programmes";
-import { BrandArt, Button, Intro } from "@/components/ui";
+import { BrandArt, BrandName, Button, Intro } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 
 export function generateStaticParams() {
@@ -30,7 +30,7 @@ export default async function Programme({ params }: { params: Promise<{ slug: st
       <section className="shell programme detail">
         <BrandArt id={b.id} />
         <div>
-          <p className="eyebrow">What makes it {b.name}</p>
+          <div className="programme-logo"><BrandName brand={b} /></div>
           <h2>{b.tagline}</h2>
           <p>{b.benefit}</p>
           <p>{b.audience}</p>
